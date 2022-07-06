@@ -1,6 +1,6 @@
-export const usersAdapter = (users) => {
+export const usersAdapter = (users = []) => {
   const countryValues = ['use', 'russia']
-  return users.map(user => {
+  return users?.map(user => {
     return {
       id: user.id || "id" + Math.random().toString(16).slice(2),
       avatar: user.avatar || '',

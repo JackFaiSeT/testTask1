@@ -25,5 +25,6 @@ npm install
 
 ### Компиляция и hot-reloads для разработки
 ```
+npm run server - запуск json-server
 npm run serve
 ```
