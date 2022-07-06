@@ -6,7 +6,6 @@ export default context => {
 
     async getUsers() {
       const result = await UserService.#userMethods.getUsers()
-      console.log(result);
       return usersAdapter(result)
     }
   }
