@@ -4,7 +4,7 @@ export default context => {
   class UserMethods {
     async getUsers() {
       const config = endpoints.users.getUsers
-      const result = await fetch(config.url, config.options)
+      const result = await context.prototype.$services.useAPI.request({ config })
       return result?.ok ? result.json() : []
     }
   }
