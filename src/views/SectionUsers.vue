@@ -16,14 +16,12 @@
 
       <v-col cols="12" md="4">
         <v-card max-width="450" class="mx-auto user-card">
-          <v-list three-line>
-            <user-list
-              :users="usersData"
-              :loading="loading"
-              title="User list"
-              no-data-text="Couldn't find users"
-            />
-          </v-list>
+          <user-list
+            :users="usersData"
+            :loading="loading"
+            title="User list"
+            no-data-text="Couldn't find users"
+          />
         </v-card>
       </v-col>
     </v-row>
